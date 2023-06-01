@@ -10,7 +10,7 @@ Classic Load Balancer provides basic load balancing across multiple Amazon EC2 i
     5. Create or select the security group accordingly.
     6. Click on Launch Instance
 
-### Steps to Configure Classic Load
+### Steps to Configure Classic Load Balancer
     1. Go to Load Balacners -> Create Load Balancer
     2. Select Classic load balancer and click on Create.
     3. Give the name of the load balancer
@@ -33,3 +33,5 @@ Classic Load Balancer provides basic load balancing across multiple Amazon EC2 i
     2. select the same protocol and port number as select in load balancer security group.
 
 Now you can connect to your instance and deploy your web application and run it on your web browser by copying the DNS name of the load balancer and paste it on your browser.
+
+`Note - If your project doesn't pass the health check, then cross-check IP of the security group and also check the ping path that you've specified in health check path.`

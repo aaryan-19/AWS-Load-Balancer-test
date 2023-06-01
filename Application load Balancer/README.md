@@ -27,3 +27,7 @@ Application Load Balancer operates at the request level (layer 7), routing traff
     4. Select or create a new security group for your load balancer which allows inbound traffic role from your own IP.
     5. Select the target group that you've created.
     6. Click on create load balancer.
+
+Now you can connect to your instance and deploy your web application and run it on your web browser by copying the DNS name of the load balancer and paste it on your browser.
+
+`Note - If your project doesn't pass the health check, then cross-check IP of the security group and also check the ping path that you've specified in health check path.`
